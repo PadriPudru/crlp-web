@@ -4,36 +4,18 @@ const TEAM_STYLE = {
   masculino: {
     cls: 'team m',
     bg: (
-      <svg className="bg" viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice">
-        <rect width="600" height="360" fill="#11294f"/>
-        <g stroke="#1f5fd6" strokeOpacity=".4" strokeWidth="2" fill="none">
-          <path d="M0 300 Q300 270 600 300"/>
-          <path d="M0 230 Q300 205 600 230"/>
-          <path d="M0 170 Q300 150 600 170"/>
-        </g>
-        <g transform="translate(420 70) rotate(20)">
-          <ellipse rx="46" ry="74" fill="#1f5fd6" opacity=".5"/>
-          <path d="M0 -64 L0 64" stroke="#0a1a33" strokeWidth="4"/>
-        </g>
-      </svg>
+      <div className="bg" style={{ background: '#11294f' }}>
+        <img src="/logo_crlp.png" className="team-logo-bg" alt="" aria-hidden="true" />
+      </div>
     ),
     emoji: '🏆',
   },
   femenino: {
     cls: 'team f',
     bg: (
-      <svg className="bg" viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice">
-        <rect width="600" height="360" fill="#143f94"/>
-        <g stroke="#ffd60a" strokeOpacity=".35" strokeWidth="2" fill="none">
-          <path d="M0 300 Q300 270 600 300"/>
-          <path d="M0 230 Q300 205 600 230"/>
-          <path d="M0 170 Q300 150 600 170"/>
-        </g>
-        <g transform="translate(430 80) rotate(-18)">
-          <ellipse rx="44" ry="70" fill="#ffd60a" opacity=".55"/>
-          <path d="M0 -60 L0 60" stroke="#0a1a33" strokeWidth="4"/>
-        </g>
-      </svg>
+      <div className="bg" style={{ background: '#143f94' }}>
+        <img src="/logo_crlp.png" className="team-logo-bg" alt="" aria-hidden="true" />
+      </div>
     ),
     emoji: '💪',
   },
