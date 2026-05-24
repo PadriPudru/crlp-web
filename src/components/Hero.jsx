@@ -37,13 +37,6 @@ export default function Hero() {
         <g stroke="#eef1f5" strokeOpacity=".18" strokeWidth="6" strokeLinecap="round">
           <path d="M880 200 L880 470"/><path d="M970 200 L970 470"/><path d="M870 300 L980 300"/>
         </g>
-        <g transform="translate(1180 230) rotate(28)">
-          <ellipse cx="0" cy="0" rx="62" ry="100" fill="#ffd60a"/>
-          <path d="M0 -86 L0 86" stroke="#0a1a33" strokeWidth="6"/>
-          <g stroke="#0a1a33" strokeWidth="5" strokeLinecap="round">
-            <path d="M-20 -40 L20 -40"/><path d="M-22 -15 L22 -15"/><path d="M-22 15 L22 15"/><path d="M-20 40 L20 40"/>
-          </g>
-        </g>
         <g transform="translate(250 300)">
           <path d="M120 120 q30 -40 70 -30 q35 9 35 50 q0 30 -25 45 l40 70 q15 30 -10 48 q-26 16 -45 -12 l-46 -78 l-70 30 q-30 12 -42 -16 q-10 -28 22 -40 l84 -35 z" fill="#11294f" stroke="#1f5fd6" strokeWidth="3"/>
           <path d="M150 250 l-30 110 q-8 30 -38 26 q-26 -6 -18 -36 l34 -120 z" fill="#11294f" stroke="#1f5fd6" strokeWidth="3"/>
@@ -56,6 +49,7 @@ export default function Hero() {
           </g>
         </g>
       </svg>
+      <img src="/logo_crlp.png" className="hero-logo-deco" alt="" aria-hidden="true" />
       <div className="hero-overlay"></div>
       <div className="wrap hero-content">
         <span className="hero-eyebrow kicker reveal">

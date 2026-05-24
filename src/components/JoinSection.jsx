@@ -17,10 +17,7 @@ export default function JoinSection() {
 
   return (
     <section id="join">
-      <svg className="join-svg" viewBox="0 0 200 200">
-        <ellipse cx="100" cy="100" rx="55" ry="92" transform="rotate(40 100 100)" fill="#0a1a33"/>
-        <path d="M55 100 L145 100" stroke="#eef1f5" strokeWidth="6"/>
-      </svg>
+      <img src="/logo_crlp.png" className="join-svg" alt="" aria-hidden="true" />
       <div className="wrap join-box reveal">
         <h2>
           {cfg.join_title_pre} <span className="blue">{cfg.join_title_highlight}</span>{cfg.join_title_post}
