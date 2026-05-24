@@ -1,0 +1,35 @@
+.adm{min-height:100vh;background:#0a1a33;color:#eef1f5;font-family:'Archivo',system-ui,sans-serif}
+.adm-nav{background:#0f244a;border-bottom:3px solid #ffd60a;padding:0 30px;display:flex;align-items:center;gap:0;position:sticky;top:0;z-index:10}
+.adm-nav .brand{font-family:'Saira Condensed',sans-serif;font-weight:900;font-size:20px;text-transform:uppercase;color:#ffd60a;padding:16px 0;margin-right:30px;text-decoration:none}
+.adm-tabs{display:flex;gap:0;flex:1;flex-wrap:wrap}
+.adm-tab{font-family:'Saira Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;font-size:14px;padding:18px 22px;color:rgba(238,241,245,.6);text-decoration:none;border:none;background:none;cursor:pointer;transition:color .2s,border-bottom .2s;border-bottom:3px solid transparent;margin-bottom:-3px}
+.adm-tab:hover{color:#eef1f5}
+.adm-tab.active{color:#ffd60a;border-bottom-color:#ffd60a}
+.adm-body{max-width:900px;margin:0 auto;padding:40px 26px}
+.adm-section-title{font-family:'Saira Condensed',sans-serif;font-weight:900;font-size:36px;text-transform:uppercase;margin-bottom:30px;color:#ffd60a}
+.adm-card{background:#0f244a;border:1px solid rgba(238,241,245,.1);border-radius:10px;padding:24px;margin-bottom:16px}
+.adm-card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;gap:12px}
+.adm-card-header h3{font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:20px;text-transform:uppercase}
+.adm-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.adm-field{display:flex;flex-direction:column;gap:6px}
+.adm-field.full{grid-column:1/-1}
+.adm-label{font-family:'Saira Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;font-size:12px;color:#9aa6b5}
+.adm-input,.adm-select,.adm-textarea{background:rgba(10,26,51,.6);border:1px solid rgba(238,241,245,.15);border-radius:6px;padding:10px 14px;color:#eef1f5;font-family:'Archivo',sans-serif;font-size:15px;width:100%;transition:border-color .2s}
+.adm-input:focus,.adm-select:focus,.adm-textarea:focus{outline:none;border-color:#ffd60a}
+.adm-textarea{resize:vertical;min-height:80px}
+.adm-select option{background:#0f244a}
+.adm-actions{display:flex;gap:10px;margin-top:16px;justify-content:flex-end}
+.btn-save{background:#ffd60a;color:#0a1a33;font-family:'Saira Condensed',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:14px;padding:10px 22px;border:none;border-radius:4px;cursor:pointer;transition:background .2s,transform .2s}
+.btn-save:hover{background:#fff;transform:translateY(-2px)}
+.btn-save:disabled{opacity:.5;cursor:default;transform:none}
+.btn-del{background:transparent;color:#e05;border:1px solid rgba(238,0,85,.3);font-family:'Saira Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:13px;padding:8px 16px;border-radius:4px;cursor:pointer;transition:all .2s}
+.btn-del:hover{background:rgba(238,0,85,.1);border-color:#e05}
+.btn-add{background:transparent;color:#ffd60a;border:2px dashed rgba(255,214,10,.3);font-family:'Saira Condensed',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:14px;padding:16px;border-radius:10px;cursor:pointer;width:100%;transition:all .2s;margin-top:8px}
+.btn-add:hover{border-color:#ffd60a;background:rgba(255,214,10,.05)}
+.adm-badge{display:inline-block;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;padding:3px 10px;border-radius:20px}
+.adm-badge.partido{background:rgba(31,95,214,.25);color:#7aaaff}
+.adm-badge.playa{background:rgba(15,163,163,.25);color:#5dd6d6}
+.adm-badge.social{background:rgba(255,214,10,.2);color:#ffd60a}
+.adm-toast{position:fixed;bottom:30px;right:30px;background:#ffd60a;color:#0a1a33;font-family:'Saira Condensed',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:1px;font-size:14px;padding:14px 24px;border-radius:6px;z-index:999;animation:toastIn .3s ease}
+@keyframes toastIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@media(max-width:600px){.adm-grid{grid-template-columns:1fr}.adm-tabs{overflow-x:auto}}
