@@ -23,11 +23,22 @@ const ICONS = {
   ),
 }
 
+function observe() {
+  const io = new IntersectionObserver(
+    (entries) => entries.forEach((x) => { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target) } }),
+    { threshold: 0.12 }
+  )
+  document.querySelectorAll('.reveal:not(.in)').forEach((el) => io.observe(el))
+}
+
 export default function Values() {
   const [valores, setValores] = useState([])
 
   useEffect(() => {
-    fetch('/api/valores').then(r => r.json()).then(setValores).catch(() => {})
+    fetch('/api/valores')
+      .then(r => r.json())
+      .then(data => { setValores(data); setTimeout(observe, 50) })
+      .catch(() => {})
   }, [])
 
   return (

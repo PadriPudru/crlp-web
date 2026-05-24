@@ -39,11 +39,22 @@ const TEAM_STYLE = {
   },
 }
 
+function observe() {
+  const io = new IntersectionObserver(
+    (entries) => entries.forEach((x) => { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target) } }),
+    { threshold: 0.12 }
+  )
+  document.querySelectorAll('.reveal:not(.in)').forEach((el) => io.observe(el))
+}
+
 export default function Teams() {
   const [equipos, setEquipos] = useState([])
 
   useEffect(() => {
-    fetch('/api/equipos').then(r => r.json()).then(setEquipos).catch(() => {})
+    fetch('/api/equipos')
+      .then(r => r.json())
+      .then(data => { setEquipos(data); setTimeout(observe, 50) })
+      .catch(() => {})
   }, [])
 
   return (
